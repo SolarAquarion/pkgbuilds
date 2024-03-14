@@ -1,0 +1,22 @@
+pkgbase = roxterm
+	pkgdesc = Tabbed, VTE-based terminal emulator
+	pkgver = 3.14.1
+	pkgrel = 1
+	url = https://github.com/realh/roxterm
+	arch = x86_64
+	license = GPL3
+	makedepends = docbook-xsl
+	makedepends = xmlto
+	makedepends = po4a
+	makedepends = cmake
+	makedepends = libsm
+	makedepends = imagemagick
+	makedepends = librsvg
+	makedepends = itstool
+	depends = dbus-glib
+	depends = vte3
+	depends = hicolor-icon-theme
+	source = https://github.com/realh/roxterm/archive/3.14.1.tar.gz
+	sha512sums = fd8aabb417024856bd6bd62f0315ed219090bf8e488b633a83f72b4519cb3a7ec7fc8948c28c68ee6e11c14b3eab67c2c861f23abe57b51fd3ab289ba8fe24dd
+
+pkgname = roxterm
