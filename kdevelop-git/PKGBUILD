@@ -6,7 +6,7 @@
 # Contributor: mosra <mosra@centrum.cz>
 
 pkgname=kdevelop-git
-pkgver=24.04.80.r45.g5fa69d7d86
+pkgver=24.01.80.r6.g362094770a
 pkgrel=1
 pkgdesc="A C/C++ development environment for KDE. (Git version)"
 arch=('i686' 'x86_64')
@@ -16,12 +16,12 @@ depends=(
     'clang'
     'libksysguard'
     'grantlee'
-    'kcmutils'
-    'threadweaver'
-    'kitemmodels'
-    'ktexteditor'
-    'knotifyconfig'
-    'knewstuff'
+    'kcmutils5'
+    'threadweaver5'
+    'kitemmodels5'
+    'ktexteditor5'
+    'knotifyconfig5'
+    'knewstuff5'
     'libkomparediff2'
     'qt5-webengine'
 )
@@ -49,13 +49,14 @@ makedepends=(
     'git'
     'subversion'
     'okteta'
-    'krunner'
+    'krunner5'
     'boost'
     'llvm'
     'qt5-tools'
+    'plasma-framework5'
     'kdevelop-pg-qt'
-    'kdoctools'
-    'purpose'
+    'kdoctools5'
+    'purpose5'
     'clang'
     'astyle'
 )
