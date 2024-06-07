@@ -2,7 +2,7 @@
 # Contributor: Ner0 <darkelfdarkelf666@yahoo.co.uk>
 
 pkgname=pantheon-files-git
-pkgver=r7398.789df8e04
+pkgver=r9321.be05771b
 pkgrel=1
 pkgdesc='The Pantheon File Browser'
 arch=(x86_64)
@@ -25,14 +25,14 @@ depends=(
   sqlite
   zeitgeist
   libcloudproviders
-  pantheon-dock
+  libportal-gtk3
 )
 makedepends=(
   git
-  gnome-common
-  granite-git
+  granite
   meson
   vala
+  gnome-common
 )
 optdepends=(
   'contractor-git: Various context menu entries'
