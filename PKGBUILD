@@ -22,7 +22,7 @@ pkgname=(
   pipewire-full-vulkan-git
   pipewire-full-ffmpeg-git
 )
-pkgver=1.0.0.r591.gaf310523
+pkgver=1.1.82.r54.gb0ce5d0d
 _so_ver=0.3
 _short_pkgver=${pkgver%%.r*}
 pkgrel=1
@@ -37,7 +37,7 @@ makedepends=(
   dbus
   doxygen
   git
-  glib2
+  glib2-devel
   graphviz
   gst-plugins-base
   jack # jack2 or pipewire-jack
@@ -138,6 +138,8 @@ package_pipewire-full-git() {
   depends=(
     gcc-libs
     glibc
+    dconf
+    avahi
     "libpipewire-full-git=$pkgver-$pkgrel"
     libcamera-base.so
     libcamera.so
