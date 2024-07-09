@@ -22,7 +22,7 @@ pkgname=(
   pipewire-full-vulkan-git
   pipewire-full-ffmpeg-git
 )
-pkgver=1.1.82.r54.gb0ce5d0d
+pkgver=1.1.83.r11.g7b8b6d92
 _so_ver=0.3
 _short_pkgver=${pkgver%%.r*}
 pkgrel=1
