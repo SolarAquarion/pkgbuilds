@@ -1,6 +1,6 @@
 # Maintainer: Solomon Choina <shlomochoina@gmail.com>
 pkgname=tabby
-pkgver=1.0.205
+pkgver=1.0.208
 pkgrel=1
 pkgdesc="A terminal for a more modern age"
 arch=('x86_64')
@@ -9,9 +9,9 @@ license=('MIT')
 conflicts=('terminus-terminal')
 replaces=('terminus-terminal')
 depends=('glib2' 'gtk3' 'nss' 'libxcrypt-compat')
-makedepends=('git' 'npm' 'yarn' 'python' 'nodejs-lts-hydrogen' 'cmake' 'node-gyp' 'rpm-tools')
+makedepends=('git' 'npm' 'yarn' 'python' 'nodejs-lts-iron' 'cmake' 'node-gyp' 'rpm-tools')
 source=("git+https://github.com/Eugeny/tabby.git#tag=v$pkgver")
-sha256sums=('SKIP')
+sha256sums=('ae4d56db4dad6cc668ba4a730a42cfbb4a2f043d7fa0993ab57052547482acbb')
 
 build(){
   cd "$srcdir/$pkgname/"
