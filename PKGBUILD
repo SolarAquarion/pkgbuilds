@@ -22,7 +22,7 @@ pkgname=(
   pipewire-full-vulkan-git
   pipewire-full-ffmpeg-git
 )
-pkgver=1.1.83.r11.g7b8b6d92
+pkgver=1.2.0.r126.gd4de97a4
 _so_ver=0.3
 _short_pkgver=${pkgver%%.r*}
 pkgrel=1
@@ -431,8 +431,6 @@ package_pipewire-full-pulse-git() {
   )
   provides=(
     pulse-native-provider
-    pulseaudio
-    pulseaudio-bluetooth
     pipewire-pulse
   )
   conflicts=(

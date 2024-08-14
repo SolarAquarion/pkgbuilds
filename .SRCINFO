@@ -1,6 +1,6 @@
 pkgbase = pipewire-full-git
 	pkgdesc = Low-latency audio/video router and processor
-	pkgver = 1.1.82.r54.gb0ce5d0d
+	pkgver = 1.2.0.r126.gd4de97a4
 	pkgrel = 1
 	url = https://pipewire.org
 	arch = x86_64
@@ -59,7 +59,7 @@ pkgname = pipewire-full-git
 	depends = glibc
 	depends = dconf
 	depends = avahi
-	depends = libpipewire-full-git=1.1.82.r54.gb0ce5d0d-1
+	depends = libpipewire-full-git=1.2.0.r126.gd4de97a4-1
 	depends = libcamera-base.so
 	depends = libcamera.so
 	depends = libdbus-1.so
@@ -84,14 +84,14 @@ pkgname = pipewire-full-git
 	optdepends = pipewire-full-zeroconf-git: Zeroconf support
 	optdepends = realtime-privileges: realtime privileges with rt module
 	optdepends = rtkit: realtime privileges with rtkit module
-	provides = pipewire=1.1.82
+	provides = pipewire=1.2.0
 	conflicts = pipewire
 
 pkgname = libpipewire-full-git
 	pkgdesc = Low-latency audio/video router and processor - client library
 	depends = glibc
 	depends = gcc-libs
-	provides = libpipewire=1.1.82
+	provides = libpipewire=1.2.0
 	provides = libpipewire-0.3.so
 	conflicts = libpipewire
 
@@ -200,8 +200,6 @@ pkgname = pipewire-full-pulse-git
 	depends = pipewire-session-manager
 	depends = systemd-libs
 	provides = pulse-native-provider
-	provides = pulseaudio
-	provides = pulseaudio-bluetooth
 	provides = pipewire-pulse
 	conflicts = pulseaudio
 	conflicts = pulseaudio-bluetooth
