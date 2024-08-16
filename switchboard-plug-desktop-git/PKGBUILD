@@ -16,7 +16,7 @@ depends=(
   libgee
   libgexiv2
   libgranite.so
-  libswitchboard.so
+  libswitchboard-3.so
   pantheon-dock
   tumbler
 )
