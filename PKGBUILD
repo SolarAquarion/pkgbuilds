@@ -3,12 +3,12 @@
 
 pkgname=fvwm3
 pkgver=1.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A highly customizable virtual desktop window manager with small memory footprint."
 arch=('x86_64')
 url="https://www.fvwm.org"
 license=('GPL' 'custom')
-depends=('libevent' 'libx11' 'libxft' 'libxrender' 'libxt' 'python' 'libxrandr' 'xtrans' )
+depends=('libevent' 'libx11' 'libxft' 'libxkbcommon' 'libxrender' 'libxt' 'python' 'libxrandr' 'xtrans' )
 provides=('fvwm=3')
 conflicts=('fvwm')
 makedepends=('meson' 'libxslt' 'asciidoctor')
