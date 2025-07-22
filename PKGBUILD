@@ -1,4 +1,6 @@
-# Maintainer: Huang-Huang Bao <eh5@sokka.cn>
+# Maintainer: Solomon Choina <shlomochoina@gmail.com>
+# Co-Maintainer: Chris Lane <aur at chrislane dot com>
+# Contributor: Huang-Huang Bao <eh5@sokka.cn>
 # Contributor: David Runge <dvzrv@archlinux.org>
 # Contributor: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
