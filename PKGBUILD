@@ -22,7 +22,7 @@ pkgname=(
   pipewire-full-vulkan-git
   pipewire-full-ffmpeg-git
 )
-pkgver=1.2.0.r126.gd4de97a4
+pkgver=1.4.0.r606.ged7398a6
 _so_ver=0.3
 _short_pkgver=${pkgver%%.r*}
 pkgrel=1
@@ -43,6 +43,7 @@ makedepends=(
   jack # jack2 or pipewire-jack
   libcamera
   libcanberra
+  libebur128
   libfdk-aac
   libffado
   libfreeaptx
@@ -65,6 +66,7 @@ makedepends=(
   rtkit
   sbc
   sdl2
+  spandsp
   systemd
   valgrind
   webrtc-audio-processing-1
@@ -72,6 +74,7 @@ makedepends=(
   vulkan-headers vulkan-icd-loader
   ffmpeg
   modemmanager
+  onnxruntime
 )
 checkdepends=(
   openal
@@ -98,6 +101,7 @@ build() {
 
   local meson_options=(
     -D bluez5-codec-lc3plus=disabled
+    -D bluez5-codec-ldac-dec=disabled
     -D docs=enabled
     -D man=enabled
     -D jack-devel=true
