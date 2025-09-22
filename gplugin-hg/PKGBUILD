@@ -3,7 +3,7 @@
 _pkgbase=gplugin
 pkgbase="$_pkgbase-hg"
 pkgname=("$_pkgbase-hg" "$_pkgbase-docs-hg")
-pkgver=2055.3a9f68453495
+pkgver=2062.fc666beab11d
 pkgdesc="GObject based library that implements a reusable plugin system"
 pkgrel=1
 arch=('i686' 'x86_64' 'armv7h')
