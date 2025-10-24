@@ -22,7 +22,7 @@ pkgname=(
   pipewire-full-vulkan-git
   pipewire-full-ffmpeg-git
 )
-pkgver=1.2.0.r126.gd4de97a4
+pkgver=1.4.0.r922.gbd608101
 _so_ver=0.3
 _short_pkgver=${pkgver%%.r*}
 pkgrel=1
@@ -40,6 +40,8 @@ makedepends=(
   glib2-devel
   graphviz
   gst-plugins-base
+  gst-plugins-base-libs
+  gstreamer
   jack # jack2 or pipewire-jack
   libcamera
   libcanberra
@@ -55,6 +57,8 @@ makedepends=(
   libx11
   libxfixes
   lilv
+  spandsp
+  onnxruntime
   meson
   ncurses
   opus
@@ -98,6 +102,7 @@ build() {
 
   local meson_options=(
     -D bluez5-codec-lc3plus=disabled
+    -D bluez5-codec-ldac-dec=disabled
     -D docs=enabled
     -D man=enabled
     -D jack-devel=true
@@ -140,6 +145,13 @@ package_pipewire-full-git() {
     glibc
     dconf
     avahi
+    fftw
+    libmysofa
+    onnxruntime
+    lilv
+    libsndfile
+    ffmpeg
+    libebur128
     "libpipewire-full-git=$pkgver-$pkgrel"
     libcamera-base.so
     libcamera.so
@@ -302,6 +314,7 @@ package_pipewire-full-audio-git() {
   depends=(
     dbus
     gcc-libs
+    spandsp
     glib2
     glibc
     libasound.so
