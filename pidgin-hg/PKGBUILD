@@ -4,7 +4,7 @@
 # Maintainer: Solomon Choina <shlomochoina@gmail.com
 pkgname=('pidgin-hg') #'libpurple-hg' 'finch-hg')
 _hgname=pidgin
-pkgver=3.r43379.30cf01b12439
+pkgver=3.r43421.c0f91f524e49
 pkgrel=1
 provides=("pidgin" "libpurple" "finch")
 conflicts=("pidgin" "libpurple" "finch")
